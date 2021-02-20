@@ -46,3 +46,15 @@ hello_list[4]+="!"
 hello_list[4]=hello_list[4]+"!"
 print(hello_list[4])
 
+print(str(hello_tuple[0]))
+#We can't change the value of those elements like we just did with the list
+#Notice the use of the str function above to explicity convert the integer
+#value inside the tuple to a string before printing it
+
+print(hello_dict["first_name"] + " " + hello_dict["last_name"] + " has " +
+        hello_dict["eye_colour"] + " eyes.")
+
+print("{0} {1} has {2} eyes.".format(hello_dict["first_name"],
+                    hello_dict["last_name"],
+                    hello_dict["eye_colour"]))
+
