@@ -6,7 +6,7 @@
 
 import sys #Used for the sys.exit function
 
-target_int=raw_input("How many integers?")
+target_int=input("How many integers?")
 
 #target_int contains a string representation of whatever is typed.
 #We need to try and convert that to an integer but
@@ -23,10 +23,11 @@ count=0
 
 #Keep asking for integer until we have the required number
 while count < target_int:
-    new_int=raw_input("Please enter integer {0}:".format(count+1))
+    new_int=input("Please enter integer {0}:".format(count+1))
     isint=False
     try:
         new_int=int(new_int)
+        isint=True
 
     except:
         print("You must enter an integer")
