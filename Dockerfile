@@ -6,10 +6,10 @@ VOLUME Python
 
 RUN apt-get update && apt-get install -y python3
 
-COPY hello_goodbye.sh /usr/local/bin/hello_goodbye.sh
+COPY current_python.sh /usr/local/bin/current_python.sh
 COPY ./Getting-Started-w-Python /Python/Getting-Started-w-Python
 
-RUN chmod 777 /usr/local/bin/hello_goodbye.sh
+RUN chmod 777 /usr/local/bin/current_python.sh
 RUN cd /Python
 
-CMD /bin/bash
+CMD current_python.sh
