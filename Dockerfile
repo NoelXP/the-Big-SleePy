@@ -10,6 +10,7 @@ COPY current_python.sh /usr/local/bin/current_python.sh
 COPY ./Getting-Started-w-Python /Python/Getting-Started-w-Python
 
 RUN chmod 777 /usr/local/bin/current_python.sh
+RUN chmod 777 /Python/Getting-Started-w-Python/construct.py
 RUN cd /Python
 
-CMD sudo current_python.sh
+CMD current_python.sh
