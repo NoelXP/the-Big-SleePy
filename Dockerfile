@@ -13,4 +13,4 @@ RUN chmod 777 /usr/local/bin/current_python.sh
 RUN chmod 777 /Python/Getting-Started-w-Python/construct.py
 
 
-CMD /Python/Getting-Started-w-Python/construct.py 
+CMD current_python.sh
