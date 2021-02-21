@@ -10,5 +10,6 @@ COPY hello_goodbye.sh /usr/local/bin/hello_goodbye.sh
 COPY ./Getting-Started-w-Python /Python/Getting-Started-w-Python
 
 RUN chmod 777 /usr/local/bin/hello_goodbye.sh
+RUN cd /Python
 
-CMD cd /Python
+CMD /bin/bash
