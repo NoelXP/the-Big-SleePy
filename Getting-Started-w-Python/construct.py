@@ -27,7 +27,7 @@ while count < target_int:
     isint = False
     try:
         new_int = int(new_int)
-
+        isint = True
     except:
         print("You must enter an integer")
 
