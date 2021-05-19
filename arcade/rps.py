@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 
 # Noel Presents: Rock Paper Scissors
 
@@ -33,7 +33,7 @@ def game():
 def move():
     while True:
         print
-        player = input("Rock = 1\nPaper = 2\nScissors = 3\nMake a move:")
+        player = raw_input("Rock = 1\nPaper = 2\nScissors = 3\nMake a move:")
         try:
             player = int(player)
             if player in (1,2,3):
@@ -62,7 +62,7 @@ def result(player, computer):
             computer_score += 1
 
 def play_again():
-    answer = input("Would you like to play again? y/n: ")
+    answer = raw_input("Would you like to play again? y/n: ")
     if answer in ("y", "Y", "yes", "Yes", "Of course!"):
         return answer
     else:
@@ -71,8 +71,8 @@ def play_again():
 def scores():
     global player_score, computer_score
     print ("HIGH SCORES")
-    print ("Player: ", player_score)
-    print ("Computer: ", computer_score)
+    print "Player: ", player_score
+    print "Computer: ", computer_score
 
 if __name__ == '__main__':
     start()

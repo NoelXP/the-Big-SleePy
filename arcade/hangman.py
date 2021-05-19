@@ -77,7 +77,7 @@ def hangedman(hangman):
 def start():
    print "Let's play a game of Linux Hangman."
    while game():
-	pass
+        pass
    scores()
 
 def game():
@@ -96,7 +96,7 @@ def game():
         letter=guess_letter()
         if len(letter)==1 and letter.isalpha():
             if letters_tried.find(letter) != -1:
-                print "You've already picked", letter
+                print ("You've already picked", letter)
             else:
                 letters_tried = letters_tried + letter
                 first_index=word.find(letter)
@@ -109,7 +109,7 @@ def game():
                         if letter == word[i]:
                             clue[i] = letter
         else:
-            print "choose another"
+            print ("choose another")
         
         hangedman(letters_wrong)
         print " ".join(clue)
@@ -140,7 +140,7 @@ def play_again():
     if answer in ("y", "Y", "yes", "Yes", "Of course!"):
         return answer
     else:
-         print "Thank you very much for playing our game. See you next time!"   
+         print "Thank you very much for playing our game. See you next time!"
 
 def scores():
     global player_score, computer_score
