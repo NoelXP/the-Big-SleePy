@@ -7,10 +7,12 @@ VOLUME Python
 RUN apt-get update && apt-get install -y python3
 
 COPY current_python.sh /usr/local/bin/current_python.sh
+COPY ./welcome.py /Python/welcome.py
 COPY ./Getting-Started-w-Python /Python/Getting-Started-w-Python
-
-RUN chmod 777 /usr/local/bin/current_python.sh
-RUN chmod 777 /Python/Getting-Started-w-Python/construct.py
+COPY ./arcade /Python/arcade
 
 
-CMD ["/bin/bash"]
+RUN chmod 777 -R /Python/
+
+
+CMD ["/bin/bash", "/Python/welcome.py"]

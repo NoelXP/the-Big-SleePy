@@ -1,1 +1,1 @@
-/Python/Getting-Started-w-Python/opposite.py
+/Python/rock-paper-scissors/rps.py
